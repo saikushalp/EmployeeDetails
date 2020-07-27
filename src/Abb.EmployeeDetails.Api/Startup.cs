@@ -85,7 +85,7 @@ namespace Abb.EmployeeDetails.Api
             app.UseAuthentication();
 
             app.UseHttpsRedirection();
-
+            app.UseCors("AllowSpecificOrigin");
             app.UseRouting();
 
             app.UseAuthorization();
